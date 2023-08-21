@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final SEJ</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .dm-section {
+        /* background-color: orange; */
+        width: 85%;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .list-unstyled {
+        list-style: none;
+      }
+      .dm-row {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+      }
+      /* Left section */
+      .dm-lf-sect {
+        width: 58%;
+        padding-right: 73px;
+        margin-left: 20px;
+        text-align: center;
+      }
+      /* Image styles */
+      .dm-img-box {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      .dm-img-box img {
+        width: 100%;
+      }
+      .dm-ft-h {
+        font-size: 2.625rem;
+        margin-bottom: 10px;
+      }
+      .dm-ft-author {
+        color: green;
+        font-size: 1.125rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      .dm-ft-excerpt {
+        font-size: 1rem;
+        font-weight: 100;
+      }
+      /* Right Section */
+      .dm-rg-sect {
+        width: 40%;
+        /* background-color: pink; */
+        padding: 30px;
+        border-left: 1px solid #dedede;
+        padding-left: 73px;
+      }
+      /* Latest popular style */
+      .sej-ft-nav {
+        display: flex;
+        font-size: 16px;
+        line-height: normal;
+        font-weight: 500;
+        margin-bottom: 30px;
+      }
+      .sej-ft-nav > a.active-tab {
+        border-color: #5ec92a;
+        background-color: #fff;
+      }
+      .sej-ft-nav > a {
+        flex: auto;
+        padding: 20px 20px 16px;
+        border-bottom: 4px solid transparent;
+        background-color: #e6f5e4;
+        text-align: center;
+        text-decoration: none !important;
+      }
+      .sej-ft-nav > a,
+      .sej-ft-tb.active-tab {
+        display: block;
+      }
+      .sej-ft-nav > a:hover {
+        background-color: #cdf0c8;
+      }
+      /* Below Latest and Popular */
+      .dm-post-article {
+        /* background-color: orange; */
+        margin-bottom: 20px;
+      }
+      .dm-cat {
+        margin-bottom: 5px;
+      }
+      .dm-cat li a {
+        font-size: 12px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #5ec92a;
+      }
+      .dm-cat li a:hover {
+        text-decoration: underline;
+      }
+      .dm-post-h {
+        margin-bottom: 10px;
+      }
+      .dm-post-h a:link {
+        font-size: 20px;
+        font-weight: 700;
+        margin: 0 0 5px;
+        text-decoration: none;
+        color: #000;
+      }
+      .dm-post-h a:hover {
+        color: #252525;
+        text-decoration: underline;
+      }
+      .dm-post-read {
+        font-size: 1rem;
+        font-weight: 100;
+      }
+      /* Media Query for Dm section first section */
+      @media (min-width: 300px) and (max-width: 767px) {
+        .dm-section {
+          margin: 0 auto;
+          width: 100%;
+          padding-right: 0;
+        }
+        .dm-lf-sect {
+          width: 100%;
+          padding-right: 0;
+          text-align: center;
+          /* background-color: orange; */
+          margin: 0 auto;
+          margin-bottom: 20px;
+        }
+        .dm-img-box {
+          width: 95%;
+          margin: 0 auto;
+          margin-bottom: 20px;
+        }
+        .dm-ft-h {
+          font-size: 31px;
+        }
+        .dm-ft-excerpt {
+          margin: 0 20px;
+        }
+
+        /* Right section Media query */
+        .dm-rg-sect {
+          width: 100%;
+          padding: 10px;
+        }
+      }
+
+      @media (min-width: 768px) and (max-width: 1200px) {
+        .dm-section {
+          margin: 0 auto;
+          width: 100%;
+          padding-right: 0;
+        }
+        .dm-row {
+          flex-wrap: nowrap;
+        }
+        .dm-lf-sect {
+          width: 100%;
+          padding-right: 0;
+          text-align: center;
+          /* background-color: orange; */
+          margin: 0 auto;
+          margin-bottom: 20px;
+        }
+        .dm-img-box {
+          width: 95%;
+          margin: 0 auto;
+          margin-bottom: 20px;
+        }
+        .dm-ft-h {
+          font-size: 31px;
+        }
+        .dm-ft-excerpt {
+          margin: 0 20px;
+        }
+
+        /* Right section Media query */
+        .dm-rg-sect {
+          width: 100%;
+          padding: 30px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="dm-section">
+      <div class="dm-row">
+        <div class="dm-lf-sect">
+          <article class="dm-ft-article">
+            <div class="dm-img-box">
+              <img
+                src="https://www.searchenginejournal.com/wp-content/uploads/2023/08/noindex-sitelinks-64e079a749597-sej-650x340.webp"
+                alt=""
+              />
+            </div>
+            <h2 class="dm-ft-h">
+              Google Answers If Noindex Is Okay For Altering Sitelinks
+            </h2>
+
+            <p class="dm-ft-author">By Roger Montti</p>
+
+            <p class="dm-ft-excerpt">
+              Google's John Mueller answers whether it's okay to use the noindex
+              tag to remove an unwanted page from the sitelinks
+            </p>
+          </article>
+        </div>
+        <div class="dm-rg-sect">
+          <nav class="sej-tab_js sej-ft-nav dark-link">
+            <a
+              class="active-tab"
+              data-tab="#l-a-section"
+              href="#Latest"
+              style=""
+            >
+              <span style="">Latest</span>
+            </a>
+            <a data-tab="#p-a-section" href="#Popular" style="">
+              <span style="">Popular</span>
+            </a>
+          </nav>
+          <div class="dm-tabs">
+            <div class="dm-tabs-sect">
+              <div class="dm-post-list">
+                <!-- post1 -->
+                <article class="dm-post-article">
+                  <ul class="dm-cat list-unstyled">
+                    <li><a href="#">Social Media</a></li>
+                  </ul>
+                  <h2 class="dm-post-h dark-link">
+                    <a href="#"
+                      >Social Media Image Size Guide For All Platforms In
+                      2023</a
+                    >
+                  </h2>
+                  <span class="dm-post-read"> 14 min read </span>
+                </article>
+                <!-- post2 -->
+                <article class="dm-post-article">
+                  <ul class="dm-cat list-unstyled">
+                    <li><a href="#">Social Media</a></li>
+                  </ul>
+                  <h2 class="dm-post-h dark-link">
+                    <a href="#"
+                      >Social Media Image Size Guide For All Platforms In
+                      2023</a
+                    >
+                  </h2>
+                  <span class="dm-post-read"> 14 min read </span>
+                </article>
+                <!-- post3 -->
+                <article class="dm-post-article">
+                  <ul class="dm-cat list-unstyled">
+                    <li><a href="#">Social Media</a></li>
+                  </ul>
+                  <h2 class="dm-post-h dark-link">
+                    <a href="#"
+                      >Social Media Image Size Guide For All Platforms In
+                      2023</a
+                    >
+                  </h2>
+                  <span class="dm-post-read"> 14 min read </span>
+                </article>
+                <!-- post4 -->
+                <article class="dm-post-article">
+                  <ul class="dm-cat list-unstyled">
+                    <li><a href="#">Social Media</a></li>
+                  </ul>
+                  <h2 class="dm-post-h dark-link">
+                    <a href="#"
+                      >Social Media Image Size Guide For All Platforms In
+                      2023</a
+                    >
+                  </h2>
+                  <span class="dm-post-read"> 14 min read </span>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

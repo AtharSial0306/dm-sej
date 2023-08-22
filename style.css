@@ -85,8 +85,9 @@ strong {
 .sej-sect {
   padding-top: 50px;
   padding-bottom: 50px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
+
 p.sej-art-author a {
   color: #5ec92a;
 }
@@ -1018,4 +1019,9 @@ strong {
   margin-bottom: 15px;
   padding-bottom: 53%;
 }
-
+.top-margin {
+  margin-top: 50px;
+}
+.bm-margin {
+  margin-bottom: 0;
+}

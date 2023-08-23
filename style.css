@@ -462,9 +462,9 @@ script + .dm-sect {
   background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0, #fff 100%);
   width: 15px;
 }
-.sej-lt-tb.active-tab {
+/*.sej-lt-tb.active-tab {
   display: flex;
-}
+}*/
 .gty-40 {
   margin-bottom: -40px;
 }
@@ -1050,4 +1050,7 @@ strong {
   .dm-ft-ftr {
     margin: 0;
   }
+}
+.color-red a {
+  color: #da291c !important;
 }

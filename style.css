@@ -1050,6 +1050,18 @@ strong {
   .dm-ft-ftr {
     margin: 0;
   }
+  .col-sm-4 {
+    padding-bottom: 0 !important;
+  }
+  .dm-hb-h {
+    font-size: 1.5rem;
+  }
+  .col-sm-8 p {
+    font-size: 1rem;
+  }
+  .dm-hb-list {
+    font-size: 0.9rem;
+  }
 }
 .color-red a {
   color: #da291c !important;

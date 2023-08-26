@@ -1220,6 +1220,11 @@ strong {
   h1 {
     margin-bottom: 20px;
   }
+  .knee-cls img {
+    width: 400px;
+    height: 300px;
+    /* margin-bottom: 40px; */
+  }
 }
 @media (min-width: 667px) {
   .toi {
@@ -1242,6 +1247,14 @@ strong {
   .dm-lf-form {
     column-gap: 30px;
   }
+  .knee-cls {
+    display: block;
+    margin-top: 50px;
+  }
+  .knee-cls img {
+    width: 400px;
+    height: 400px;
+  }
 }
 .dark-link a,
 .dark-link a:visited {
@@ -1251,53 +1264,4 @@ strong {
   color: #da291c;
 }
 
-/* Ads classes */
-.ad-cls {
-  width: 100%;
-  background: url("2.png") no-repeat;
-  /* height: 300px; */
-  background-position: center;
-  background-origin: content-box;
-  background-size: cover;
-  display: grid;
-  grid-template-columns: 1fr 450px;
-  align-items: center;
-  justify-content: end;
-}
-.text-area {
-  padding: 30px;
-}
-.text-area .ad-h {
-  margin: 15px 0;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 3vw;
-  line-height: 1;
-}
-.text-area p {
-  margin: 0 0 15px;
-  color: #fff;
-  width: 40%;
-  line-height: 1.4;
-}
-.shop-btn {
-  padding: 15px 40px;
-  background-color: #da291c;
-  border: none;
-}
-.shop-btn a {
-  color: #fff !important;
-  font-size: 1rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-.product-img-box {
-  width: 50%;
-  justify-self: center;
-}
-.product-img {
-  width: 300px;
-  height: 300px;
-  border-radius: 100%;
-}
+/* Ads classes knee sleeves */

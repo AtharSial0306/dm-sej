@@ -12,6 +12,7 @@ body {
   color: #252525;
   overflow-wrap: break-word;
   letter-spacing: -0.2px;
+  overflow-x: hidden;
 }
 body {
   margin: 0;
@@ -980,7 +981,7 @@ strong {
   transition: 0.3s;
   /* background-image: linear-gradient(45deg, #3eae08 50%, #5ec92a 50%);
   color: #fff !important; */
-  background-color: #da291c;
+  background-color: #000;
 
   padding: calc((41px - 21px - 1px * 2) / 2) 35px;
   font-size: 15px;
@@ -1228,17 +1229,21 @@ strong {
   }
   .top-land-ad {
     display: block;
-    margin-top: 10px;
+    margin-top: 5px;
     text-align: center;
+    padding: 10px;
   }
-  .top-land-ad p {
-    font-size: 0.7rem;
-    margin-bottom: 0;
+  .top-land-ad img {
+    width: 100%;
+    margin: 0;
   }
   .sidebar-ad {
     display: inline-flex;
     height: 100% !important;
     width: 100% !important;
+  }
+  .land-ad {
+    padding: 0 10px;
   }
 }
 @media (min-width: 667px) {
@@ -1309,7 +1314,6 @@ strong {
 .shop-btn a:hover {
   color: #fff !important;
 }
-.advertisep-p {
-  text-align: center;
-  font-size: 0.7rem;
+.dm-lt-nav::--webkit--scrollbar {
+  overflow: hidden;
 }

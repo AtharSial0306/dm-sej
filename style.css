@@ -1019,6 +1019,7 @@ strong {
 }
 .top-margin {
   margin-top: 20px;
+  padding: 20px 10px;
 }
 .bm-margin {
   margin-bottom: 0;
@@ -1030,7 +1031,7 @@ strong {
     margin: 0 auto;
   }
   .dm-sect {
-    padding-top: 50px;
+    /* padding-top: 50px; */
     padding-bottom: 0;
   }
   .dm-extp {
@@ -1225,6 +1226,20 @@ strong {
     height: 300px;
     /* margin-bottom: 40px; */
   }
+  .top-land-ad {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .top-land-ad p {
+    font-size: 0.7rem;
+    margin-bottom: 0;
+  }
+  .sidebar-ad {
+    display: inline-flex;
+    height: 100% !important;
+    width: 100% !important;
+  }
 }
 @media (min-width: 667px) {
   .toi {
@@ -1255,6 +1270,18 @@ strong {
     width: 400px;
     height: 400px;
   }
+  .land-ad {
+    text-align: center;
+  }
+  .land-ad img {
+    width: 60%;
+  }
+  .top-land-ad {
+    display: none;
+  }
+  .sidebar-ad {
+    height: 800px;
+  }
 }
 .dark-link a,
 .dark-link a:visited {
@@ -1265,3 +1292,24 @@ strong {
 }
 
 /* Ads classes knee sleeves */
+.shop-btn {
+  display: block;
+  padding: 10px 40px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  background-color: #da291c;
+  color: #fff;
+  width: 100%;
+}
+.shop-btn a {
+  color: #fff;
+  text-decoration: none;
+}
+.shop-btn a:hover {
+  color: #fff !important;
+}
+.advertisep-p {
+  text-align: center;
+  font-size: 0.7rem;
+}

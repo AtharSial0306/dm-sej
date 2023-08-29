@@ -1317,3 +1317,7 @@ strong {
 .dm-lt-nav::--webkit--scrollbar {
   overflow: hidden;
 }
+.unique-btn {
+  width: 300px;
+  margin: 0 auto;
+}
